@@ -1,0 +1,13 @@
+<aura:component controller="Witnesses" implements="force:hasRecordId,flexipage:availableForRecordHome">
+<aura:handler name="init" value="{! this }" action="{! c.init }"/>
+<aura:attribute name="hierarchyList" type="Object" access="PRIVATE"/>
+<aura:attribute name="selected" type="String" default=""/>
+
+	<lightning:card>
+		{! v.selected }
+		<div class="slds-p-around_medium lgc-bg">
+			<lightning:tree items="{! v.hierarchyList }" header="Witnesses" onselect="{! c.handleSelect }"/>
+			<!-- TODO : convert this to tree-grid -->
+		</div>
+	</lightning:card>
+</aura:component>
