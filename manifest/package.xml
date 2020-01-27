@@ -9,6 +9,10 @@
 		<name>AuraDefinitionBundle</name>
 	</types>
 	<types>
+		<members>Court_Manager</members>
+		<name>CustomApplication</name>
+	</types>
+	<types>
 		<members>Account</members>
 		<members>Account_Case_Junction__c</members>
 		<members>Contact</members>
