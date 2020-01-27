@@ -31,8 +31,6 @@ global class Contact {
     global List<ContractContactRole> ContractContactRoles;
     global List<Contract> ContractsSigned;
     global List<LeadChangeEvent> ConvertedContact;
-    global Id Court_Case__c;
-    global Court_Case__c Court_Case__r;
     global User CreatedBy;
     global Id CreatedById;
     global Datetime CreatedDate;

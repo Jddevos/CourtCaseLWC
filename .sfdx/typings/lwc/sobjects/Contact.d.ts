@@ -22,14 +22,6 @@ declare module "@salesforce/schema/Contact.CleanStatus" {
   const CleanStatus:string;
   export default CleanStatus;
 }
-declare module "@salesforce/schema/Contact.Court_Case__c" {
-  const Court_Case__c:any;
-  export default Court_Case__c;
-}
-declare module "@salesforce/schema/Contact.Court_Case__r" {
-  const Court_Case__r:any;
-  export default Court_Case__r;
-}
 declare module "@salesforce/schema/Contact.CreatedBy" {
   const CreatedBy:any;
   export default CreatedBy;

@@ -58,10 +58,6 @@ declare module "@salesforce/schema/AccountChangeEvent.CleanStatus" {
   const CleanStatus:string;
   export default CleanStatus;
 }
-declare module "@salesforce/schema/AccountChangeEvent.Court_Case__c" {
-  const Court_Case__c:any;
-  export default Court_Case__c;
-}
 declare module "@salesforce/schema/AccountChangeEvent.CreatedBy" {
   const CreatedBy:any;
   export default CreatedBy;

@@ -42,8 +42,6 @@ global class Account {
     global List<ContentDocumentLink> ContentDocumentLinks;
     global List<Contract> Contracts;
     global List<LeadChangeEvent> ConvertedAccount;
-    global Id Court_Case__c;
-    global Court_Case__c Court_Case__r;
     global List<Court_Case__c> Court_Cases__r;
     global User CreatedBy;
     global Id CreatedById;

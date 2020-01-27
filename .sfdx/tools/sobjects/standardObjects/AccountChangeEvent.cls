@@ -22,7 +22,6 @@ global class AccountChangeEvent {
     global String BillingStreet;
     global Object ChangeEventHeader;
     global String CleanStatus;
-    global Id Court_Case__c;
     global User CreatedBy;
     global Id CreatedById;
     global Datetime CreatedDate;

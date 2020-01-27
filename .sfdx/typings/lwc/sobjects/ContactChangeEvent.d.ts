@@ -26,10 +26,6 @@ declare module "@salesforce/schema/ContactChangeEvent.CleanStatus" {
   const CleanStatus:string;
   export default CleanStatus;
 }
-declare module "@salesforce/schema/ContactChangeEvent.Court_Case__c" {
-  const Court_Case__c:any;
-  export default Court_Case__c;
-}
 declare module "@salesforce/schema/ContactChangeEvent.CreatedBy" {
   const CreatedBy:any;
   export default CreatedBy;

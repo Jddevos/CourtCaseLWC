@@ -14,7 +14,6 @@ global class ContactChangeEvent {
     global Date Birthdate;
     global Object ChangeEventHeader;
     global String CleanStatus;
-    global Id Court_Case__c;
     global User CreatedBy;
     global Id CreatedById;
     global Datetime CreatedDate;

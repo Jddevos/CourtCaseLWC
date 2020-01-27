@@ -54,14 +54,6 @@ declare module "@salesforce/schema/Account.CleanStatus" {
   const CleanStatus:string;
   export default CleanStatus;
 }
-declare module "@salesforce/schema/Account.Court_Case__c" {
-  const Court_Case__c:any;
-  export default Court_Case__c;
-}
-declare module "@salesforce/schema/Account.Court_Case__r" {
-  const Court_Case__r:any;
-  export default Court_Case__r;
-}
 declare module "@salesforce/schema/Account.CreatedBy" {
   const CreatedBy:any;
   export default CreatedBy;

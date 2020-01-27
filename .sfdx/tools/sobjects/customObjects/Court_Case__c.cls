@@ -8,7 +8,6 @@
 
 global class Court_Case__c {
     global List<Account_Case_Junction__c> Account_Case_Junctions__r;
-    global List<Account> Accounts__r;
     global List<AttachedContentDocument> AttachedContentDocuments;
     global List<Attachment> Attachments;
     global Id Client__c;
@@ -44,7 +43,6 @@ global class Court_Case__c {
     global Datetime SystemModstamp;
     global List<TopicAssignment> TopicAssignments;
     global List<TaskChangeEvent> What;
-    global List<Contact> Witnesses__r;
 
     global Court_Case__c () 
     {
