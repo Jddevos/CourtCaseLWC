@@ -5,7 +5,7 @@
     <externalId>false</externalId>
     <label>Client</label>
     <referenceTo>Account</referenceTo>
-    <relationshipLabel>Court Cases</relationshipLabel>
+    <relationshipLabel>Court Cases as a Client</relationshipLabel>
     <relationshipName>Court_Cases</relationshipName>
     <relationshipOrder>0</relationshipOrder>
     <reparentableMasterDetail>false</reparentableMasterDetail>
