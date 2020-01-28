@@ -2,7 +2,7 @@ public with sharing class Witnesses {
     
 	@AuraEnabled(cacheable=false)
 	public static List<WrapperClass> getHierarchy(Id curCase){
-		System.debug('Getting object hierarchy');
+		// System.debug('Getting object hierarchy');
 		
 		List<WrapperClass> wcList = new List<WrapperClass> ();
 

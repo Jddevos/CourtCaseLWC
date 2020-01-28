@@ -6,6 +6,10 @@
 	</types>
 	<types>
 		<members>*</members>
+		<name>ApexTrigger</name>
+	</types>
+	<types>
+		<members>*</members>
 		<name>AuraDefinitionBundle</name>
 	</types>
 	<types>
@@ -17,6 +21,7 @@
 		<members>Account_Case_Junction__c</members>
 		<members>Contact</members>
 		<members>Court_Case__c</members>
+		<members>Hierarchy_Content_Update__e</members>
 		<name>CustomObject</name>
 	</types>
 	<types>

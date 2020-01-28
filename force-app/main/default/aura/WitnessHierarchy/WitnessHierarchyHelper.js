@@ -26,5 +26,19 @@
 			}
 		});
 		$A.enqueueAction(action);
-	}
+	},
+
+	subscribe : function(component, helper) {
+		const empApi = component.find('empApi');
+		const channel = component.get('v.channel');
+		const replayId = -1;
+		const callback = function(message) {
+			// console.log('Event Received : ' + JSON.stringify(message));
+			helper.grabData(component);
+		}
+		empApi.subscribe(channel, replayId, $A.getCallback(callback)).then($A.getCallback(function (newSubscription) {
+			// console.log('Subscribed to channel ' +channel);
+			component.set('v.subscription', newSubscription);
+		}));
+	},
 })

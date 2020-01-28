@@ -3,12 +3,17 @@
 <aura:attribute name="gridColumns" type="List" access="PRIVATE" />
 <aura:attribute name="gridData" type="Object" access="PRIVATE" />
 
+<lightning:empApi aura:id="empApi"/>
+<aura:attribute name="channel" type="String" default="/event/Hierarchy_Content_Update__e"/>
+<aura:attribute name="subscription" type="Map"/>
+
 	<lightning:card>
 		<div class="slds-p-around_medium lgc-bg">
 			<lightning:treeGrid 
 				columns = "{! v.gridColumns }"
 				data = "{! v.gridData }"
 				keyField = "id"
+				hideCheckboxColumn="true"
 				aura:id = "hierarchyTreeGrid"
 			/>
 		</div>

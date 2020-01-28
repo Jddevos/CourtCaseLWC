@@ -5,16 +5,11 @@
 			{ label: 'Phone Number', fieldName: 'phone', type: 'phone' }
 		];
 		component.set('v.gridColumns', columns);
+		
+		//Grab initial data
 		helper.grabData(component);
 
-		//Refresh data every 100 seconds
-		// Not thrilled with this
-		setInterval(function(){ helper.grabData(component); }, 10000);
+		//Set up subscription to receive updates
+		helper.subscribe(component, helper);
 	},
-
-	handleSelect : function(component, event, helper) {
-		event.preventDefault();
-		console.log(event);
-		component.set('v.selected', event.getParam('id'));
-	}
 })
