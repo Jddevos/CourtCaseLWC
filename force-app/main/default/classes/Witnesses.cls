@@ -16,18 +16,18 @@ public with sharing class Witnesses {
 		// Pull in all of the account & contact information from those accounts
 		List<Account> accountList = [SELECT Id, Name, Phone, (SELECT Id, Name, Phone FROM Contacts) FROM Account WHERE Id IN :accountIdsToGrab];
 
-		//Map data to the wrapper class
+		// Map data to the wrapper class
 		for (Account a : accountList) {
 			WrapperClass wc = new WrapperClass();
-			wc.name = a.Name;
 			wc.id = a.Id;
+			wc.name = a.Name;
 			wc.href = '/' +a.Id;
 			wc.phone = a.Phone;
 			List<Item> iList = new List<Item> ();
 			for (Contact c : a.Contacts) {
 				Item i = new Item();
-				i.name = c.Name;
 				i.id = c.Id;
+				i.name = c.Name;
 				i.href = '/' +c.Id;
 				i.phone = c.Phone;
 				iList.add(i);

@@ -9,13 +9,7 @@
 
 	<lightning:card>
 		<div class="slds-p-around_medium lgc-bg">
-			<lightning:treeGrid 
-				columns = "{! v.gridColumns }"
-				data = "{! v.gridData }"
-				keyField = "id"
-				hideCheckboxColumn="true"
-				aura:id = "hierarchyTreeGrid"
-			/>
+			<lightning:treeGrid columns = "{! v.gridColumns }" data = "{! v.gridData }" keyField = "id" hideCheckboxColumn="true" aura:id = "hierarchyTreeGrid"/>
 		</div>
 	</lightning:card>
 </aura:component>

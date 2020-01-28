@@ -1,5 +1,6 @@
 public with sharing class HandleCourtCaseUpdates {
 
+	// Create event with Accounts
 	public static void fireEvents(List<Account> accounts) {
 		// System.debug('Creating event');
 		List<Hierarchy_Content_Update__e> eventList = new List<Hierarchy_Content_Update__e> ();
@@ -15,6 +16,7 @@ public with sharing class HandleCourtCaseUpdates {
 		// System.debug(results);
 	}
 
+	// Create event with Contacts
 	public static void fireEvents(List<Contact> contacts) {
 		// System.debug('Creating event');
 		List<Hierarchy_Content_Update__e> eventList = new List<Hierarchy_Content_Update__e> ();
@@ -27,6 +29,7 @@ public with sharing class HandleCourtCaseUpdates {
 			eventList.add(hcu);
 		}
 
+		// Publish the events if there are any
 		if (eventList.size() > 0) {
 			List<Database.SaveResult> results = EventBus.publish(eventList);
 			// System.debug(results);

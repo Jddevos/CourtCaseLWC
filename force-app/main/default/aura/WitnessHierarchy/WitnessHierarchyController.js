@@ -6,10 +6,10 @@
 		];
 		component.set('v.gridColumns', columns);
 		
-		//Grab initial data
+		// Grab initial data
 		helper.grabData(component);
 
-		//Set up subscription to receive updates
+		// Set up subscription to receive updates
 		helper.subscribe(component, helper);
 	},
 })
